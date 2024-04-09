@@ -23,7 +23,7 @@ const Instagram = () => {
         {carousel.map((img) => (
           <div className="p-0.5 relative cursor-pointer group">
             <img
-              className="hover:scale-105 transition-all duration-1000 object-cover w-64 h-72"
+              className="hover:scale-105 transition-all duration-1000 object-cover w-64 h-40"
               src={img.images}
               alt=""
             />

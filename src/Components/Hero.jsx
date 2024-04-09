@@ -2,9 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Parallax } from "react-parallax";
-import image1 from "/src/assets/images/carousel/carousel1.jpg"
-import image2 from "/src/assets/images/carousel/carousel4.jpg"
+import image1 from "/src/assets/images/carousel/carousel1.jpg";
+import image2 from "/src/assets/images/carousel/carousel4.jpg";
 import image3 from "/src/assets/images/carousel/carousel5.jpg"
+
 const Hero = () => {
   const carousel = [
     { images:  image1},
@@ -19,14 +20,23 @@ const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
   };
 
   return (
     <div>
       <Slider {...settings}>
         {carousel.map((images, index) => (
+            <div key={index}>
+              <div className="w-full h-screen md:block">
+                <img
+                    className="w-full h-full object-cover"
+                    src={images.images}
+                    alt=""
+                  />
+              </div>
+            </div>
+          ))}
+        {/* {carousel.map((images, index) => (
           <div key={index}>
             <Parallax
               strength={600}
@@ -44,7 +54,7 @@ const Hero = () => {
               }}
             />
           </div>
-        ))}
+        ))} */}
       </Slider>
     </div>
   );
