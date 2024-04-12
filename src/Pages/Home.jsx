@@ -1,10 +1,10 @@
-import About from "../Components/About";
-import Hero from "../Components/Hero";
-import Navbar from "../Components/Navbar";
-import Wedding from "../Components/Wedding";
-import ParalFoto from "../Components/ParalFoto";
-import Reels from "../Components/Reels";
-import Instagram from "../Components/Instagram";
+import About from "../Components/Home/About";
+import Hero from "../Components/Home/Hero";
+import Navbar from "../Components/Home/Navbar";
+import Wedding from "../Components/Home/Wedding";
+import ParalFoto from "../Components/Home/ParalFoto";
+import Reels from "../Components/Home/Reels";
+import Instagram from "../Components/Home/Instagram";
 
 const Home = () => {
   return (
