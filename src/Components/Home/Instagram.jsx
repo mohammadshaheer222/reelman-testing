@@ -17,9 +17,9 @@ const Instagram = () => {
   ];
 
   return (
-    <div className="px-8">
+    <div className="px-8 pb-6">
       <h1 className="heading">Instagram</h1>
-      <div className="grid grid-cols-3 h-24 w-full md:grid-cols-6 pt-4">
+      <div className="grid grid-cols-3 h-full w-full md:grid-cols-6 pt-4">
         {carousel.map((img) => (
           <div className="p-0.5 relative cursor-pointer group">
             <img

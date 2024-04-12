@@ -45,9 +45,9 @@ const Wedding = () => {
               src={wedding.img}
               alt=""
             />
-            <p className="heading text-center tracking-tight font-medium block text-sm md:text-lg">
+            <p className="heading text-center tracking-tight font-extralight block text-md md:text-lg capitalize">
               {wedding.quote} - <br />
-              <span>{wedding.bride}</span> and <span>{wedding.groom}</span>
+              <span className="uppercase font-medium">{wedding.bride}</span> and <span className="uppercase font-medium">{wedding.groom}</span>
             </p>
           </div>
         ))}
