@@ -42,7 +42,7 @@ const Reels = () => {
               speed={40}
               pauseOnHover={true}
               style={{
-                fontSize: "8rem",
+                fontSize: "6rem",
                 fontWeight: "bold",
                 color: "#ffffff",
               }}

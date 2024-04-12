@@ -44,7 +44,7 @@ const Hero = () => {
               style={{
                 minHeight: "100vh",
                 height: "auto",
-                width: "100%",
+                width: "100vw",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
