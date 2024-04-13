@@ -38,12 +38,12 @@ const Reels = () => {
               gradientColor={[255, 255, 255]}
               gradientWidth={30}
               speed={40}
-              pauseOnHover={true}
               style={{
-                fontSize: "6rem",
+                fontSize: "4rem",
                 fontWeight: "bold",
                 color: "#ffffff",
               }}
+              loading="lazy"
             >
               <h1>Wedding Day Wedding Day</h1>
             </Marquee>

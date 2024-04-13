@@ -14,6 +14,7 @@ const ParalFoto = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        loading="lazy"
       ></Parallax>
     </div>
   );

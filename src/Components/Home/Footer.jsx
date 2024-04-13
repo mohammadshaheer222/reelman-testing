@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="bg-black text-white px-8 flex flex-co  gap-8 py-4 justify-center items-center flex-wrap space-x-6 w-full">
       <h1 className="text-lg">LOGO</h1>
-      <div className="flex justify-center items-center">
+      {/* <div className="flex justify-center items-center">
         <div className="text-balance max-w-sm ">
           <h1 className="text-lg pb-4">About</h1>
           <p className="font-spaceMono text-gray-400">
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="border-t-2">
 
-      </div>
+      </div> */}
     </div>
   );
 };
