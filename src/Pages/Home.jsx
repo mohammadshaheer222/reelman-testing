@@ -5,7 +5,7 @@ import Wedding from "../Components/Home/Wedding";
 import ParalFoto from "../Components/Home/ParalFoto";
 import Reels from "../Components/Home/Reels";
 import Instagram from "../Components/Home/Instagram";
-import Footer from "../Components/Home/Footer";
+// import Footer from "../Components/Home/Footer";
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <Wedding />
       <Reels />
       <Instagram />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -9,6 +9,7 @@ const ParalFoto = () => {
         bgImage={parallax}
         strength={500}
         style={{
+          // backgroundImage: `url(${parallax})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

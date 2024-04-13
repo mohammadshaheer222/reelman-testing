@@ -22,7 +22,7 @@ const Reels = () => {
         <div key={index} className="relative">
           <Parallax
             strength={600}
-            bgImage={video.video}
+            // bgImage={`${video.video}`}
             style={{
               minHeight: "100vh",
               height: "auto",
@@ -30,11 +30,14 @@ const Reels = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundSize: "contain",
+              backgroundImage: `url(${video.video})`,
+              backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              position: "relative",
             }}
           />
+
           <div className="absolute top-0 w-full h-full flex justify-center items-end mix-blend-difference overflow-hidden">
             <Marquee
               gradientColor={[255, 255, 255]}
@@ -49,6 +52,11 @@ const Reels = () => {
             >
               <h1>Wedding Day Wedding Day</h1>
             </Marquee>
+          </div>
+          <div className="absolute top-0 text-white flex justify-end w-full   px-2">
+            <h1 className="cursor-pointer scale-95 hover:scale-100 transition-all duration-300 text-lg">
+              [View Project]
+            </h1>
           </div>
         </div>
       ))}

@@ -25,7 +25,7 @@ const Navbar = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.8,
+        delay: 0.4,
         duration: 5,
       },
     },
@@ -38,19 +38,23 @@ const Navbar = () => {
       opacity: 1,
       transition: {
         delay: 0.1,
-        duration: 0.8,
+        duration: 0.4,
       },
     },
     exit: {
       opacity: 0,
       transition: {
         delay: 0.1,
-        duration: 0.8,
+        duration: 0.4,
       },
     },
   };
   return (
-    <div className="text-gray-300 ">
+    <div
+      className={`${color ? "text-black" : "text-gray-300"}  ${
+        isOpen ? "text-black" : "text-gray-300"
+      }`}
+    >
       <motion.nav
         variants={navbarVariant}
         initial="hidden"
@@ -82,7 +86,9 @@ const Navbar = () => {
             exit="exit"
             initial="hidden"
             animate="visible"
-            className="bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg"
+            className={`bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg ${
+              isOpen ? "text-black" : "text-gray-300"
+            }`}
           >
             <Link to="/" onClick={closeMenu}>
               Home
@@ -90,8 +96,8 @@ const Navbar = () => {
             <Link to="/about" onClick={closeMenu}>
               About
             </Link>
-            <Link to="/works" onClick={closeMenu}>
-              Works
+            <Link to="/wedding" onClick={closeMenu}>
+              Wedding
             </Link>
             <Link to="/contact" onClick={closeMenu}>
               Contact
