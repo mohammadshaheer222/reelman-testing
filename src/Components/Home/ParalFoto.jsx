@@ -6,10 +6,10 @@ const ParalFoto = () => {
   return (
     <div className="py-6">
       <Parallax
-        bgImage={parallax}
         strength={500}
         style={{
-          // backgroundImage: `url(${parallax})`,
+          backgroundImage: `url(${parallax})`,
+          backgroundAttachment: "fixed",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

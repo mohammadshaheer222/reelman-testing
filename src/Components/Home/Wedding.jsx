@@ -34,7 +34,7 @@ const Wedding = () => {
   return (
     <div className="px-8 w-full ">
       <h1 className="heading pb-4">Wedding Stories</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 h-full gap-y-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 h-full gap-4">
         {wedding.map((wedding, index) => (
           <div key={index} className="relative overflow-hidden">
             <img
