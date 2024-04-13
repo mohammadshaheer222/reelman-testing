@@ -1,21 +1,20 @@
 import { Parallax } from "react-parallax";
-// import parallax from "/src/assets/images/parallelax.jpg"
-import parallax from "/src/assets/images/paral2.jpg";
+import parallaxImage from "/src/assets/images/paral2.jpg";
 
 const ParalFoto = () => {
   return (
     <div className="py-6">
       <Parallax
+        className="md:h-[100vh]"
         strength={500}
+        bgImage={parallaxImage}
         style={{
-          backgroundImage: `url(${parallax})`,
-          backgroundAttachment: "fixed",
+          minHeight: "30vh",
+          maxHeight: "100vh",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      >
-        <div className="h-[50vh] w-[100vh] md:h-[100vh]"></div>
-      </Parallax>
+      ></Parallax>
     </div>
   );
 };

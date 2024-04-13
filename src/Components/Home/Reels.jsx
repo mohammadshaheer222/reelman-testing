@@ -21,16 +21,12 @@ const Reels = () => {
       {videos.map((video, index) => (
         <div key={index} className="relative">
           <Parallax
-            className="h-96"
-            strength={600}
+            className="md:h-[100vh]"
+            bgImage={video.video}
+            strength={500}
             style={{
-              height: "",
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundImage: `url(${video.video})`,
-              backgroundAttachment: "fixed",
+              minHeight: "50vh",
+              maxHeight: "100vh",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
