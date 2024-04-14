@@ -26,6 +26,8 @@ const Reels = () => {
             style={{
               minHeight: "90vh",
               maxHeight: "100vh",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
             <Background className="custom-bg w-screen">

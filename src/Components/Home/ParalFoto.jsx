@@ -10,6 +10,8 @@ const ParalFoto = () => {
         style={{
           minHeight: "50vh",
           maxHeight: "100vh",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
         }}
       >
         <Background className="custom-bg w-screen">
