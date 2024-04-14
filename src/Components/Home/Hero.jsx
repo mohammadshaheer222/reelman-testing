@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "/src/assets/images/carousel/carousel1.jpg";
 import image2 from "/src/assets/images/carousel/carousel4.jpg";
 import image3 from "/src/assets/images/carousel/carousel5.jpg";
+import { Background, Parallax } from "react-parallax";
 
 const Hero = () => {
   const carousel = [{ images: image1 }, { images: image2 }, { images: image3 }];
@@ -22,7 +23,7 @@ const Hero = () => {
   return (
     <div>
       <Slider {...settings}>
-        {carousel.map((images, index) => (
+        {/* {carousel.map((images, index) => (
           <div key={index}>
             <div className="w-full h-screen md:block">
               <img
@@ -32,26 +33,27 @@ const Hero = () => {
               />
             </div>
           </div>
-        ))}
-        {/* {carousel.map((images, index) => (
+        ))} */}
+        {carousel.map((images, index) => (
           <div key={index}>
             <Parallax
-              strength={600}
-              bgImage={images.images}
+              strength={500}
               style={{
                 minHeight: "100vh",
                 height: "auto",
                 width: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
               }}
-            />
+            >
+              <Background className="custom-bg w-screen h-screen">
+                <img
+                  src={images.images}
+                  alt=""
+                  className="object-cover object-center w-full h-full"
+                />
+              </Background>
+            </Parallax>
           </div>
-        ))} */}
+        ))}
       </Slider>
     </div>
   );
