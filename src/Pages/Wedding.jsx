@@ -1,8 +1,11 @@
-import WeddingHome from "../Components/Wedding/WeddingHome";
+
+import WeddingConPage from "../Components/Wedding/WeddingConPage";
+import WeddingHero from "../Components/Wedding/WeddingHero";
 
 const Wedding = () => {
   return <div>
-    <WeddingHome />
+    <WeddingHero />
+    <WeddingConPage />
   </div>;
 };
 

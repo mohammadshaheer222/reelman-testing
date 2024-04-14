@@ -41,18 +41,10 @@ const Reels = () => {
           </Parallax>
 
           <div className="absolute top-0 w-full h-full flex justify-center items-end mix-blend-difference overflow-hidden">
-            <Marquee
-              gradientColor={[255, 255, 255]}
-              gradientWidth={30}
-              speed={40}
-              style={{
-                fontSize: "4rem",
-                fontWeight: "bold",
-                color: "#ffffff",
-              }}
-              loading="lazy"
-            >
-              <h1>Wedding Day Wedding Day</h1>
+            <Marquee speed={40}>
+              <h1 className="text-8xl font-bold text-white">
+                Wedding Day Wedding Day
+              </h1>
             </Marquee>
           </div>
           <div className="absolute top-0 text-white flex justify-end w-full   px-2">

@@ -2,9 +2,9 @@ import wedding1 from "/src/assets/images/work/gal-1.jpg";
 import wedding2 from "/src/assets/images/work/gal-3.jpg";
 import wedding3 from "/src/assets/images/wedding3.jpg";
 import wedding4 from "/src/assets/images/wedding4.jpg";
-import WeddingContent from "./WeddingContent";
+import WeddingContent from "../Home/WeddingContent";
 
-const Wedding = () => {
+const WeddingConPage = () => {
   const wedding = [
     {
       img: wedding3,
@@ -43,4 +43,4 @@ const Wedding = () => {
   );
 };
 
-export default Wedding;
+export default WeddingConPage;
