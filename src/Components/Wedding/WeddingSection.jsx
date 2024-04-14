@@ -4,7 +4,7 @@ import wedding3 from "/src/assets/images/wedding3.jpg";
 import wedding4 from "/src/assets/images/wedding4.jpg";
 import WeddingContent from "../Home/WeddingContent";
 
-const WeddingConPage = () => {
+const WeddingSection = () => {
   const wedding = [
     {
       img: wedding3,
@@ -33,6 +33,7 @@ const WeddingConPage = () => {
   ];
   return (
     <div className="px-8 w-full ">
+      <h1>lkksfdlss</h1>
       <h1 className="heading pb-4">Wedding Stories</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 h-full gap-4">
         {wedding.map((wedding, index) => (
@@ -43,4 +44,4 @@ const WeddingConPage = () => {
   );
 };
 
-export default WeddingConPage;
+export default WeddingSection;

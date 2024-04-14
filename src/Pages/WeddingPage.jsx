@@ -1,11 +1,13 @@
-import WeddingConPage from "../Components/Wedding/WeddingConPage";
-import WeddingHero from "../Components/Wedding/WeddingHero";
+import WeddingHome from "../Components/Wedding/WeddingHome";
+import WeddingMid from "../Components/Wedding/WeddingMid";
 
 const WeddingPage = () => {
-  return <div>
-    <WeddingHero />
-    <WeddingConPage />
-  </div>;
+  return (
+    <div>
+      <WeddingHome />
+      <WeddingMid />
+    </div>
+  )
 };
 
 export default WeddingPage;

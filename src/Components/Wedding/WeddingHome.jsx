@@ -7,7 +7,7 @@ import image3 from "/src/assets/images/carousel/carousel5.jpg";
 import HeroContent from "../Home/HeroContent";
 import DetailsHd from "../Details/DetailsHd";
 
-const WeddingHero = () => {
+const WeddingHome = () => {
   const weddingCarousel = [
     { images: image2 },
     { images: image3 },
@@ -35,4 +35,4 @@ const WeddingHero = () => {
     </div>
   );
 };
-export default WeddingHero;
+export default WeddingHome;

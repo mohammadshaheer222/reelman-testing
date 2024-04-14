@@ -1,7 +1,6 @@
 import { Background, Parallax } from "react-parallax";
 
 const HeroContent = ({ images }) => {
-    // console.log(images)
   return (
     <div>
       <Parallax

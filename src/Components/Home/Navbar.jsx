@@ -13,11 +13,11 @@ const Navbar = () => {
 
   const openMenu = () => {
     setIsOpen(!isOpen);
-    if (!isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    // if (!isOpen) {
+    //   document.body.style.overflow = "hidden";
+    // } else {
+    //   document.body.style.overflow = "unset";
+    // }
   };
   const closeMenu = () => {
     setIsOpen(false);
@@ -56,7 +56,7 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`  ${isOpen && "text-gray-900"} ${
+      className={`${isOpen && "text-gray-900"} ${
         color ? " text-gray-900" : " text-gray-300"
       }`}
     >
@@ -68,19 +68,19 @@ const Navbar = () => {
           color ? "bg-white" : "bg-none"
         }`}
       >
-        <Link to="/" className={`uppercase cursor-pointer `}>
+        <Link to="/" className="uppercase cursor-pointer">
           logo
         </Link>
         <div className="flex items-center gap-3">
           <a
             href="https://wa.me/7561847879?text=Hello"
-            className={`font-medium text-sm tracking-wide cursor-pointer `}
+            className="font-medium text-sm tracking-wide cursor-pointer"
           >
             [LET'S CHAT]
           </a>
           <p
             onClick={openMenu}
-            className={`font-medium text-sm tracking-wide cursor-pointer `}
+            className="font-medium text-sm tracking-wide cursor-pointer"
           >
             {isOpen ? "[CLOSE]" : "[MENU]"}
           </p>
@@ -93,7 +93,7 @@ const Navbar = () => {
             exit="exit"
             initial="hidden"
             animate="visible"
-            className={`bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg `}
+            className="bg-white font-semibold tracking-wider flex flex-col items-center justify-center h-screen gap-10 fixed left-0 right-0 top-0 z-10 md:text-lg "
           >
             <Link to="/" className="hover:text-gray-600" onClick={closeMenu}>
               Home
