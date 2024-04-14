@@ -8,15 +8,13 @@ const ParalFoto = () => {
         className="md:h-[100vh]"
         strength={500}
         style={{
-          minHeight: "30vh",
+          minHeight: "50vh",
           maxHeight: "100vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
         loading="lazy"
       >
         <Background className="custom-bg w-screen">
-          <img src={parallaxImage} alt="" className="h-[100vh] md:h-full w-full" />
+          <img src={parallaxImage} alt="" className="h-[100vh] md:h-full w-full object-cover object-center" />
         </Background>
       </Parallax>
     </div>

@@ -24,22 +24,16 @@ const Reels = () => {
             className="md:h-[100vh]"
             strength={500}
             style={{
-              minHeight: "50vh",
+              minHeight: "90vh",
               maxHeight: "100vh",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
             }}
           >
-            <Background
-              className="custom-bg w-screen"
-              style={{
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            >
-              <img src={video.video} alt="" className="h-[100vh] md:h-full w-full" />
+            <Background className="custom-bg w-screen">
+              <img
+                src={video.video}
+                alt=""
+                className="h-[100vh] md:h-full w-full object-cover object-center"
+              />
             </Background>
           </Parallax>
 
