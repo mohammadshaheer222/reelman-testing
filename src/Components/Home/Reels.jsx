@@ -1,4 +1,4 @@
-import { Parallax } from "react-parallax";
+import { Background, Parallax } from "react-parallax";
 import Marquee from "react-fast-marquee";
 import video1 from "/src/assets/images/video/video1.gif";
 import video2 from "/src/assets/images/video/video2.gif";
@@ -22,7 +22,6 @@ const Reels = () => {
         <div key={index} className="relative">
           <Parallax
             className="md:h-[100vh]"
-            bgImage={video.video}
             strength={500}
             style={{
               minHeight: "50vh",
@@ -31,7 +30,18 @@ const Reels = () => {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-          />
+          >
+            <Background
+              className="custom-bg w-screen"
+              style={{
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+            >
+              <img src={video.video} alt="" className="h-[100vh] md:h-full w-full" />
+            </Background>
+          </Parallax>
 
           <div className="absolute top-0 w-full h-full flex justify-center items-end mix-blend-difference overflow-hidden">
             <Marquee
