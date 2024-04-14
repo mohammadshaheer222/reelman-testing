@@ -11,10 +11,14 @@ const ParalFoto = () => {
           minHeight: "50vh",
           maxHeight: "100vh",
         }}
-        loading="lazy"
       >
         <Background className="custom-bg w-screen">
-          <img src={parallaxImage} alt="" className="h-[100vh] md:h-full w-full object-cover object-center" />
+          <img
+            src={parallaxImage}
+            alt=""
+            className="h-[100vh] md:h-full w-full object-cover object-center"
+            loading="lazy"
+          />
         </Background>
       </Parallax>
     </div>

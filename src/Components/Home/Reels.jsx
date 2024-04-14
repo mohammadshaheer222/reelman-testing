@@ -33,6 +33,7 @@ const Reels = () => {
                 src={video.video}
                 alt=""
                 className="h-[100vh] md:h-full w-full object-cover object-center"
+                loading="lazy"
               />
             </Background>
           </Parallax>
