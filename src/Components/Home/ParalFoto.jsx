@@ -5,7 +5,7 @@ const ParalFoto = () => {
   return (
     <div className="py-6">
       <Parallax
-        className="md:h-[100vh]"
+        className=""
         strength={500}
         style={{
           minHeight: "50vh",
