@@ -14,19 +14,19 @@ const Wedding = () => {
     },
     {
       img: wedding2,
-      quote: "Teo Less Fish In The Sea",
+      // quote: "Teo Less Fish In The Sea",
       bride: "Reba",
       groom: "Joemon",
     },
     {
       img: wedding4,
-      quote: "Teo Less Fish In The Sea",
+      // quote: "Teo Less Fish In The Sea",
       bride: "Reba",
       groom: "Joemon",
     },
     {
       img: wedding1,
-      quote: "Teo Less Fish In The Sea",
+      // quote: "Teo Less Fish In The Sea",
       bride: "Reba",
       groom: "Joemo",
     },
