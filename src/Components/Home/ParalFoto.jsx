@@ -5,7 +5,7 @@ const ParalFoto = () => {
   return (
     <div className="py-6">
       <Parallax
-        className=""
+        className="md:h-full"
         strength={500}
         style={{
           minHeight: "50vh",
@@ -14,11 +14,11 @@ const ParalFoto = () => {
           backgroundPosition: "center"
         }}
       >
-        <Background className="custom-bg w-screen">
+        <Background className="custom-bg w-screen ">
           <img
             src={parallaxImage}
             alt=""
-            className="h-[100vh] md:h-full w-full object-cover object-center"
+            className="h-[100vh] w-full object-cover object-center"
             loading="lazy"
           />
         </Background>
