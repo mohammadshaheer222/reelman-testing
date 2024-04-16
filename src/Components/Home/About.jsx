@@ -40,15 +40,16 @@ const About = () => {
 
     <div className="px-6 h-screen space-y-6 py-4 ">
       <div className="text-4xl md:relative md:text-6xl md:flex md:justify-center">
-        <h1 className="md:absolute md:top-16 md:z-30 md:mix-blend-overlay" >
+        <h1 className="md:absolute md:top-16 md:z-30 md:mix-blend-overlay">
           A Modern Approach <br /> to an Age Old Tradition
         </h1>
       </div>
+      <div className="md:flex md:justify-center md:items-center">
         <div className="flex relative gap-x-2">
           <div className="md:pt-64">
             <img
               src={parallax}
-              className="about-img1 w-32 h-40 object-cover object-center md:w-full md:h-80"
+              className="about-img1 w-32 h-40 object-cover object-center  md:w-80 lg:w-full md:h-80"
               alt=""
             />
           </div>
@@ -70,26 +71,27 @@ const About = () => {
           <div className="absolute right-0 top-14 md:static ">
             <img
               src={image3}
-              className="about-img2 w-32 h-40 object-cover object- object-center md:w-full md:h-80"
+              className="about-img2 w-32 h-40 object-cover object- object-center md:w-80 lg:w-full md:h-80"
               alt=""
             />
           </div>
         </div>
-        <div className="pt-16 block md:hidden">
-          <p>
-            Considered to be the epitome of Modern Photography and Filmmaking,
-            HOTC has transformed the Indian Wedding landscape on a regular
-            basis. For almost a decade House On The Clouds has been creating
-            photographs and films which are timeless and have been etched in
-            memories of thousands of people forever.
-          </p>
-          <p>
-            Awarded as the Wedding Filmmaker of the year for four consecutive
-            years at the Weddingsutra awards along with numerous other awards
-            HOTC is the only company listed on IMDB for its award winning films.
-          </p>
-        </div>
       </div>
+      <div className="pt-16 block md:hidden">
+        <p>
+          Considered to be the epitome of Modern Photography and Filmmaking,
+          HOTC has transformed the Indian Wedding landscape on a regular basis.
+          For almost a decade House On The Clouds has been creating photographs
+          and films which are timeless and have been etched in memories of
+          thousands of people forever.
+        </p>
+        <p>
+          Awarded as the Wedding Filmmaker of the year for four consecutive
+          years at the Weddingsutra awards along with numerous other awards HOTC
+          is the only company listed on IMDB for its award winning films.
+        </p>
+      </div>
+    </div>
   );
 };
 export default About;
