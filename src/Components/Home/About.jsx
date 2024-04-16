@@ -38,7 +38,7 @@ const About = () => {
     //   </div>
     // </div>
 
-    <div className="px-6 h-screen space-y-6 py-4 ">
+    <div className="px-6 h-full space-y-6 py-4 ">
       <div className="text-4xl md:relative md:text-6xl md:flex md:justify-center">
         <h1 className="md:absolute md:top-16 md:z-30 md:mix-blend-overlay">
           A Modern Approach <br /> to an Age Old Tradition

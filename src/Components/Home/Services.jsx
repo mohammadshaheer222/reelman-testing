@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const Services = () => {
   return (
-    <div className="md:pt-8">
+    <div className="py-4">
       <Marquee speed={20} pauseOnHover={true}>
         <div className="ml-6">
           <div className="flex gap-x-6 text-xl font-medium cursor-pointer md:text-4xl md:gap-x-12 overflow-hidden">
