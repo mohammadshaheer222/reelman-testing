@@ -3,7 +3,7 @@ import parallaxImage from "/src/assets/images/paral2.jpg";
 
 const ParalFoto = () => {
   return (
-    <div className="py-6">
+    <div className="py-4 md:h-[90vh]">
       <Parallax
         className="md:h-full"
         strength={500}
@@ -14,7 +14,7 @@ const ParalFoto = () => {
           backgroundPosition: "center"
         }}
       >
-        <Background className="custom-bg w-screen ">
+        <Background className="custom-bg w-screen">
           <img
             src={parallaxImage}
             alt=""

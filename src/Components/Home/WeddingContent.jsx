@@ -5,7 +5,7 @@ const WeddingContent = ({wedding}) => {
   return (
     <div  className="relative overflow-hidden">
       <img
-        className="object-cover object-center h-96 w-full"
+        className="object-cover object-center h-[28rem] w-full"
         src={wedding.img}
         alt=""
       />

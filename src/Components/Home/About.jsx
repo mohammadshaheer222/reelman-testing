@@ -49,7 +49,7 @@ const About = () => {
           <div className="md:pt-64">
             <img
               src={parallax}
-              className="about-img1 w-32 h-40 object-cover object-center  md:w-80 lg:w-full md:h-80"
+              className="about-img1 w-32 h-40 object-cover object-center  md:w-80 lg:w-full md:h-96"
               alt=""
             />
           </div>
@@ -71,7 +71,7 @@ const About = () => {
           <div className="absolute right-0 top-14 md:static ">
             <img
               src={image3}
-              className="about-img2 w-32 h-40 object-cover object- object-center md:w-80 lg:w-full md:h-80"
+              className="about-img2 w-32 h-40 object-cover object- object-center md:w-80 lg:w-full md:h-96"
               alt=""
             />
           </div>

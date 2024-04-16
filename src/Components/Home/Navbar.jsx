@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,9 +81,9 @@ const Navbar = () => {
           </a>
           <p
             onClick={openMenu}
-            className="font-medium text-sm tracking-wide cursor-pointer"
+            className="font-medium tracking-wide cursor-pointer"
           >
-            {isOpen ? "[CLOSE]" : "[MENU]"}
+            {isOpen ? <MdClose size={30}/> : <MdMenu size={30}/>}
           </p>
         </div>
       </motion.nav>
