@@ -77,7 +77,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="pt-16 block md:hidden">
+      <div className="pt-14 block md:hidden">
         <p>
           Considered to be the epitome of Modern Photography and Filmmaking,
           HOTC has transformed the Indian Wedding landscape on a regular basis.

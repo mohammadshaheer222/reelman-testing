@@ -19,42 +19,44 @@
 .about-img1 {
   @media screen and (min-width: 375px) and (max-width: 450px) {
     width: 10rem;
+    height: 12rem;
   }
   @media screen and (min-width: 450px) and (max-width: 500px) {
     width: 12rem;
-    height: 12rem;
+    height: 14rem;
   }
   @media screen and (min-width: 500px) and (max-width: 600px) {
-    width: 14rem;
-    height: 14rem;
+    width: 13rem;
+    height: 16rem;
   }
   @media screen and (min-width: 600px) and (max-width: 700px) {
     width: 16rem;
-    height: 16rem;
+    height: 18rem;
   }
   @media screen and (min-width: 700px) and (max-width: 768px) {
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
   }
 }
 .about-img2 {
   @media screen and (min-width: 375px) and (max-width: 450px) {
     width: 10rem;
+    height: 12rem;
   }
   @media screen and (min-width: 450px) and (max-width: 500px) {
     width: 12rem;
-    height: 12rem;
+    height: 14rem;
   }
   @media screen and (min-width: 500px) and (max-width: 600px) {
-    width: 14rem;
-    height: 14rem;
+    width: 13rem;
+    height: 16rem;
   }
   @media screen and (min-width: 600px) and (max-width: 700px) {
     width: 16rem;
-    height: 16rem;
+    height: 18rem;
   }
   @media screen and (min-width: 700px) and (max-width: 768px) {
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
   }
 }
