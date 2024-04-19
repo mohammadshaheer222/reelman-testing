@@ -31,7 +31,7 @@ const Instagram = () => {
               <div className="overlay absolute top-0 left-0 w-full h-full bg-white opacity-0 transition-opacity duration-500 group-hover:opacity-50"></div>
 
               <div className="scale-0 group-hover:scale-100 duration-500 absolute top-1/2 right-1/2 transform translate-x-1/2 translate-y-1/2">
-                <FaInstagram className=" text-white scale-125 hover:rotate-90 transition-all duration-500 md:w-36" />
+                <FaInstagram size={30} className=" text-white scale-125 hover:rotate-90 transition-all duration-500 md:w-52" />
               </div>
             </div>
           ))}

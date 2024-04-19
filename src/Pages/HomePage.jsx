@@ -13,7 +13,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <MidSection />
-      <Services />
+      {/* <Services /> */}
       <ParalFoto />
       <Wedding />
       <Reels />

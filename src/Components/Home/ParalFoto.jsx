@@ -3,7 +3,7 @@ import parallaxImage from "/src/assets/images/paral2.jpg";
 
 const ParalFoto = () => {
   return (
-    <div className="py-4 md:h-[90vh]">
+    <div className="pb-4 md:h-[90vh]">
       <Parallax
         className="md:h-full"
         strength={500}

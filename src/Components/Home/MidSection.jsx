@@ -21,7 +21,7 @@ const MidSection = () => {
   };
 
   return (
-    <div className="py-4">
+    <div className="pt-4">
   <Slider {...settings}>
     {carousel.map((images, index) => (
       <div className="h-screen w-screen">

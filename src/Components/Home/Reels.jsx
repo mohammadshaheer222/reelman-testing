@@ -17,40 +17,37 @@ const Reels = () => {
   return (
     <div className="py-6">
       {videos.map((video, index) => (
-        <div key={index} className="relative">
-          <Parallax
-            className="md:h-[100vh]"
-            strength={500}
-            style={{
-              minHeight: "90vh",
-              maxHeight: "100vh",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <Background className="custom-bg w-screen">
-              <img
-                src={video.video}
-                alt=""
-                className="h-[100vh] w-full object-cover object-center"
-                loading="lazy"
-              />
-            </Background>
-          </Parallax>
+        <Link to="/details">
+          <div key={index} className="relative">
+            <Parallax
+              className="md:h-[100vh]"
+              strength={500}
+              style={{
+                minHeight: "90vh",
+                maxHeight: "100vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Background className="custom-bg w-screen">
+                <img
+                  src={video.video}
+                  alt=""
+                  className="h-[100vh] w-full object-cover object-center"
+                  loading="lazy"
+                />
+              </Background>
+            </Parallax>
 
-          <div className="absolute top-0 w-full h-full flex justify-center items-end mix-blend-difference">
-            <Marquee speed={30} className="overflow-hidden">
-              <h1 className="text-8xl font-bold text-white">
-                Wedding Day Wedding Day
-              </h1>
-            </Marquee>
+            <div className="absolute top-0 w-full h-full flex justify-center items-end mix-blend-difference">
+              <Marquee speed={30} className="overflow-hidden">
+                <h1 className="text-8xl font-bold text-white">
+                  Wedding Day Wedding Day
+                </h1>
+              </Marquee>
+            </div>
           </div>
-          <div className="absolute top-0 text-white flex justify-end w-full   px-2">
-            <Link to="/details" className="cursor-pointer scale-95 hover:scale-100 transition-all duration-300 text-lg">
-              [View Project]
-            </Link>
-          </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
