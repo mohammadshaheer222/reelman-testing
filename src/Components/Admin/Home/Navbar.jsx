@@ -15,6 +15,7 @@ const Navbar = () => {
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -22,7 +23,7 @@ const Navbar = () => {
   return (
     <div className="">
       <nav
-        className={`flex items-center justify-between md:justify-around px-8 py-2 fixed left-0 right-0 top-0 z-20 bg-gray-300`}
+        className={`flex items-center justify-between  px-8 py-2 fixed left-0 right-0 top-0 z-50 bg-gray-300`}
       >
         <div className="flex items-center gap-3">
           <p
@@ -37,7 +38,7 @@ const Navbar = () => {
           logo
         </Link>
       </nav>
-        <Sidebar isOpen={isOpen}/>
+      <Sidebar isOpen={isOpen} closeMenu={closeMenu} />
       <Outlet />
     </div>
   );

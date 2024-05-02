@@ -29,7 +29,7 @@ const Login = () => {
         setEmail("");
         setPassword("");
         setError("");
-        navigate("/dashboard");
+        navigate("/reelman-admin/dashboard");
       })
       .catch((error) => setError(error.response.data.message));
   };

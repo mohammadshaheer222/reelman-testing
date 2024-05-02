@@ -38,23 +38,26 @@ const About = () => {
     //   </div>
     // </div>
 
-    <div className="px-6 h-full space-y-6 py-4 ">
-      <div className="text-4xl md:relative md:text-6xl md:flex md:justify-center">
-        <h1 className="md:absolute md:top-16 md:z-30 md:mix-blend-overlay">
+    <div className="flex justify-center">
+
+    
+    <div className="px-6 md:max-w-4xl lg:max-w-7xl h-full space-y-6 py-4 ">
+      <div className="text-4xl lg:relative sm:text-6xl sm:text-center ">
+        <h1 className="lg:absolute lg:top-20 lg:z-30 ">
           A Modern Approach <br /> to an Age Old Tradition
         </h1>
       </div>
-      <div className="md:flex md:justify-center md:items-center">
-        <div className="flex relative gap-x-2">
-          <div className="md:pt-64">
+      <div className="lg:flex lg:justify-center lg:items-center">
+        <div className="pt-2 flex relative sm:justify-center gap-x-2 sm:gap-x-14 ">
+          <div className=" lg:pt-60">
             <img
               src={parallax}
-              className="about-img1 w-32 h-40 object-cover object-center  md:w-80 lg:w-full md:h-96"
+              className="about-img1 w-32 h-32 object-cover object-center sm:w-80 sm:h-80"
               alt=""
             />
           </div>
-          <div className="hidden md:block md:max-w-sm md:pt-52 md:text-balance md:text-lg">
-            <p>
+          <div className="hidden lg:block lg:max-w-md lg:pt-52 text-balance lg:text-lg">
+            <p >
               Considered to be the epitome of Modern Photography and Filmmaking,
               HOTC has transformed the Indian Wedding landscape on a regular
               basis. For almost a decade House On The Clouds has been creating
@@ -68,16 +71,19 @@ const About = () => {
               films.
             </p>
           </div>
-          <div className="absolute right-0 top-14 md:static ">
+          <div className="absolute right-0 sm:static sm:pt-20 top-14 lg:static ">
             <img
               src={image3}
-              className="about-img2 w-32 h-40 object-cover object- object-center md:w-80 lg:w-full md:h-96"
+              className="about-img2 w-32 h-32 object-cover object- object-center sm:w-80 sm:h-96"
               alt=""
             />
           </div>
         </div>
       </div>
-      <div className="pt-14 block md:hidden">
+
+
+      
+      <div className="pt-16 sm:pt-0 block lg:hidden">
         <p>
           Considered to be the epitome of Modern Photography and Filmmaking,
           HOTC has transformed the Indian Wedding landscape on a regular basis.
@@ -91,6 +97,7 @@ const About = () => {
           is the only company listed on IMDB for its award winning films.
         </p>
       </div>
+    </div>
     </div>
   );
 };
